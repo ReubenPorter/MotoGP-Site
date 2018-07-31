@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--set the character encoding-->
+	<meta charset="utf-8">
+	<!--set the meta tag for control of the viewport-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+	<!--This is where my title goes-->
+	<title>MotoGP</title>
+	<!--Link for the stylesheet-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Link for jquery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<!--main body starts here-->
+<body>
+	<header>
+		<div class="topbar"></div>
+		<a href="index.html"><img id="motogpimg" src="img/motogplogo.svg" alt="motogplogo"/></a>
+		<img id="menu" src="img/menuicon.svg" title="Menu" alt="Menu"/>
+		<nav id="nav-menu">
+			<img id="close" src="img/close.svg" alt="close"  />
+			<h3>Menu</h3>
+		  <ul class="page-nav">
+				<li><a href="html/gallery.html">Gallery</a></li>
+				<li><a href="html/calendar.html">Calendar</a></li>
+				<li><a href="html/riders.html">Riders</a></li>
+				<li><a href="html/teams.html">Teams</a></li>
+				<li><a href="html/circuits.html">Circuits</a></li>
+		  </ul>
+			<ul class="social-nav">
+					<li><a id="instagram" href="https://www.instagram.com/motogp/"><img src="img/instagram.svg" alt="instagram"/></a></li>
+					<li><a id="twitter" href="https://twitter.com/MotoGP"><img src="img/twitter.svg" alt="twitter"/></a></li>
+					<li><a id="facebook" href="https://www.facebook.com/MotoGP"><img src="img/facebook.svg" alt="facebook"/></a></li>
+					<li><a id="youtube" href="https://www.youtube.com/motogp"><img src="img/youtube.svg" alt="youtube"/></a></li>
+			</ul>
+		</nav>
+	</header>
+
+  <div class="banner">
+		<div id="title-tablet">
+			<h1>Welcome to the home of Motogp</h1>
+		</div>
+  </div>
+
+	<main>
+    <section class="main-section">
+			<figure>
+				<img src="img/marquez.jpg"/>
+				<figcaption>
+				 Marquez retains the 2017 MotoGP trophy
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/crash.jpg"/>
+				<figcaption>
+				 Check out the top 10 crashes of the season
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/tyres.jpg"/>
+				<figcaption>
+				 Soft, Medium, Hard - whats the difference?
+				</figcaption>
+			</figure>
+			<figure>
+				<img src="img/motorecap.jpg"/>
+				<figcaption>
+				2017 full season recap
+				</figcaption>
+			</figure>
+    </section>
+		<!--for tablets and larger-->
+		<section class="two-col">
+			<article class="left-content">
+				<a class="twitter-timeline" data-width="80%" data-height="450" href="https://twitter.com/MotoGP?ref_src=twsrc%5Etfw">Tweets by MotoGP</a>
+			</article>
+			<!--the guardian API search form-->
+			<article class="right-content">
+				<div class="text-box">
+					<img src="img/guardian.svg" alt="guardian"/>
+					<button id="searchButton">Show Guardian Results</button>
+					<ul id="results">
+
+					</ul>
+				</div>
+			</article>
+		</section>
+		<div class="banner2"></div>
+		<!--for mobile view only-->
+		<section class="twitter">
+			<a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/MotoGP?ref_src=twsrc%5Etfw">Tweets by MotoGP</a>
+		</section>
+
+		<section class="vid">
+			<video controls muted autoplay playsinline loop>
+				<source src="vids/motogpvid.mp4" type="video/mp4">
+			</video>
+		</section>
+	</main>
+
+	<!--back to top button-->
+	<div class="back-to-top">
+		<img src="img/totop.svg" alt="backtotop"/>
+	</div>
+
+	<!--Javascript here-->
+	<script src="js/navscript.js"></script>
+	<script src="js/backtoptop.js"></script>
+	<script src="js/hidenav.js"></script>
+	<script src="js/guardian.js"></script>
+	<!--Script for twitter widget-->
+	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+	<!--footer starts here-->
+	<footer>
+		<div class="socialmedia">
+			<a href="https://www.instagram.com/motogp/"><img src="img/instagram.svg" alt="instagram"/></a>
+			<a href="https://www.facebook.com/MotoGP/"><img src="img/facebook.svg" alt="facebook"/></a>
+			<a href="https://twitter.com/MotoGP"><img src="img/twitter.svg" alt="twitter"/></a>
+			<a href="https://youtube.com/motogp"><img src="img/youtube.svg" alt="youtube"/></a>
+		</div>
+	<!--site map navigation-->
+		<nav class="footnav">
+			<h4>Site Map</h4>
+			<ul>
+				<li><a href="html/gallery.html">Gallery</a></li>
+				<li><a href="html/calendar.html">Calendar</a></li>
+				<li><a href="html/riders.html">Riders</a></li>
+				<li><a href="html/teams.html">Teams</a></li>
+				<li><a href="html/circuits.html">Circuits</a></li>
+			</ul>
+		</nav>
+		<nav class="footnav">
+			<h4>Events</h4>
+			<ul>
+				<li><a href="#">Tickets</a></li>
+				<li><a href="#">Tours</a></li>
+				<li><a href="#">Hotels</a></li>
+				<li><a href="#">Dates</a></li>
+				<li><a href="#">Information</a></li>
+			</ul>
+		</nav>
+		<nav class="footnav">
+			<h4>Contact</h4>
+			<ul>
+				<li><a href="#">Email</a></li>
+				<li><a href="#">Telephone</a></li>
+				<li><a href="#">Address</a></li>
+				<li><a href="#">Fax No</a></li>
+				<li><a href="#">Location</a></li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

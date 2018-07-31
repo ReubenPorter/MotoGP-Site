@@ -1,0 +1,1299 @@
+/*import google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*STYLING FOR MOBILE PHONES*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  background: #e9e9e9;
+}
+
+/*main header*/
+header{
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.topbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 100%;
+  background: #221f1a;
+  border-bottom: 2px solid #646464;
+}
+
+header a{
+  text-decoration: none;
+}
+
+/*Navigation*/
+nav{
+  display: none;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav ul a{
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul a:hover{
+  color: #ac0e35;
+}
+
+nav ul a li{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+main h1{
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #ac0e35;
+  text-shadow: 1px 1px 1px black;
+}
+
+#close{
+  width: 20px;
+  position: relative;
+  text-align: right;
+  float: left;
+  clear: both;
+  top: 0;
+}
+
+#nav-menu{
+  width: auto;
+  text-align: center;
+  font-weight: 600;
+  position: absolute;
+  color: #fff;
+  top: 0;
+  right: 0;
+  background-color: black;
+  z-index: 99;
+  opacity: 0.9;
+  width: 40%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#nav-menu h3{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-nav li{
+  border-top: 1px solid #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.page-nav{
+  border-bottom: 1px solid #fff;
+}
+
+.social-nav{
+  padding-top: 20px;
+}
+
+.social-nav img{
+  height: 40px;
+  width: auto;
+}
+
+.social-nav li{
+  padding-bottom: 10px;
+}
+
+#motogpimg{
+  height: 30px;
+  width: auto;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+
+#menu{
+  display: block;
+}
+
+.show-menu{
+  display: block;
+}
+
+/*banner*/
+.banner{
+  height: 230px;
+  width: auto;
+  background-image: url("../img/background1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner2{
+  display: none;
+}
+
+/*styling for the gallery slideshow*/
+.gallery-container{
+  height: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-container h2{
+  padding-bottom: 20px;
+}
+
+.gallery-container form{
+  padding-bottom: 40px;
+}
+
+.gallery-container form label{
+  font-weight: bold;
+}
+
+#flickrQuery{
+  width: 130px;
+}
+
+#submitbtn{
+  background-color: #404040;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 60px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 1em;
+}
+
+#submitbtn:hover{
+  background:#fff;
+  box-shadow:0px 2px 10px 5px red;
+  color:#000;
+}
+
+#results{
+  padding-bottom: 20px;
+}
+
+.slides{
+  margin: auto;
+  height: 200px;
+  width: auto;
+  border: 5px solid #fff;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade{
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+/*styling for article box on gallery page*/
+.slide-show{
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.text-box{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: white;
+  width: 80%;
+  padding: 20px;
+  position: relative;
+  margin-left: 5%;
+}
+
+.text-box::after {
+  content: "";
+  height: 20px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/rip.svg") bottom left;
+  /* background-size: 100%; */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: -5px;
+}
+
+.text-box p{
+	color: black;
+}
+
+/*animation for the fly in title*/
+#title-tablet{
+  padding-top: 10px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  -webkit-animation: mymove 3s; /* Safari 4.0 - 8.0 */
+  animation: mymove 3s;
+  animation-iteration-count: 1;
+}
+
+#title-tablet h1{
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
+  font-weight: 800;
+  margin-top: 50px;
+}
+
+@keyframes mymove {
+    from {left: -300px;}
+    to {left: 0px;}
+}
+
+/*styling for main section on index page*/
+.main-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*styling for the figuires and transition on index page*/
+.main-section figure{
+  height: 150px;
+  width: 48%;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+
+.main-section figure img{
+  height: 150px;
+  width: auto;
+  margin-bottom: -3.25em;
+  border-radius: 5px;
+}
+
+.main-section figcaption {
+  box-sizing: border-box;
+  height: 3em;
+  line-height: 1.2em;
+  transform: translateY(4em);
+  background: #fff;
+  text-align: center;
+  /* background: rgba( 255, 255, 255, 0 ); */
+  opacity: 0;
+  transition: all .5s;
+}
+
+.main-section figure:hover figcaption {
+  transform: translateY(0em);
+  /* background: rgba( 255, 255, 255, .78 ); */
+  opacity: .78;
+}
+
+.main-section article{
+  height: 150px;
+  width: 45%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #373737;
+  color: white;
+  text-align: center;
+}
+
+/*styling for the twitter section*/
+.twitter{
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/*hide the tablet and larger section*/
+.two-col{
+  display: none;
+}
+
+/*styling for video section*/
+.vid{
+  height: auto;
+  background: black;
+}
+
+.vid video{
+  height: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*styling for the footer*/
+footer{
+  display: flex;
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: black;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.socialmedia{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 20px;
+}
+
+.socialmedia img{
+  display: flex;
+  height: 42px;
+  width: auto;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+
+.socialmedia img:hover{
+  transform: scale(1.25);
+  transition: 0.3s;
+}
+
+.footnav{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+}
+
+.footnav:nth-child(3){
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.footnav li{
+  padding-bottom: 5px;
+  padding-top: 1px;
+}
+
+.footnav li:hover{
+  color: grey;
+}
+
+.footnav h4{
+  padding-bottom: 10px;
+  color: #ac0e35;
+}
+
+
+/*styling for the animation on riders page*/
+.rider-container{
+  height: 750px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.rider-container:before{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  height: 750px;
+  width: 100%;
+  background-image: url("../img/background2.jpg");
+  background-position: center;;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .1;
+}
+/* entire container, keeps perspective */
+.flip-container {
+  padding-top: 20px;
+	perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+	width: 136px;
+	height: 120px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+  height: 120px;
+}
+
+.front img{
+  height: 120px;
+  width: auto;
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+  border-bottom: 1px dashed black;
+}
+
+.back p{
+  width: 100%;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.back img{
+  height: 30px;
+  width: auto;
+}
+
+.back h4{
+  color: #fff;
+  text-shadow: 2px 2px 4px black;
+}
+
+/*styling for the teams page*/
+.team-container{
+  width: 100%;
+}
+
+.team-container h1{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.team{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+/*all of the teams*/
+#ducati{
+  background-image: url("../img/duacti.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#yamaha{
+  background-image: url("../img/yamaha.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#honda{
+  background-image: url("../img/honda.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#suzuki{
+  background-image: url("../img/suzuki.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*styling for the modal*/
+/*modal backgound*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-top: 50px;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/*modal box*/
+.modal-content {
+  background-color: #fefefe;
+  color: black;
+  margin: auto;
+  padding: 30px;
+  width: 60%;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.modal-content button{
+  float: right;
+}
+
+.modal-content h3{
+  padding-bottom: 20px;
+}
+
+.modal-content p{
+  padding-bottom: 20px;
+}
+
+/* The Close Button */
+.closebtn {
+  font-size: 1em;
+}
+
+.closebtn:hover,
+.closebtn:focus {
+  cursor: pointer;
+}
+
+/*styling for the open button*/
+.openbtn{
+  position: relative;
+  background-color: #404040;
+  border: none;
+  border-radius: 5px;
+  padding: 7px;
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+.openbtn:hover{
+  background:#fff;
+  box-shadow:0px 2px 10px 5px red;
+  color:#000;
+}
+
+/*styling for the calendar page*/
+.calendar{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+
+.dateholder{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-top: 20px;
+  padding: 5px;
+  height: 150px;
+  width: 90%;
+  padding-bottom: 20px;
+  border-radius: 4px;
+}
+
+.dateholder h2{
+  display: flex;
+  width: 30%;
+  height: 40px;
+  color: #7c7c7c;
+  align-items: center;
+}
+
+.dateholder h3{
+  display: flex;
+  width: 65%;
+  height: 40px;
+  align-items: center;
+}
+
+.dateholder img{
+  height: 110px;
+  width: auto;
+  margin: auto;
+}
+/*back to top button*/
+.back-to-top {
+  position: fixed;
+  bottom: 65px;
+  right: 0;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.back-to-top img{
+  height: 40px;
+  width: 40px;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+}
+
+/*styling for circuits page*/
+.circuitcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.circuit h2{
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  height: 50px;
+  padding-left: 10px;
+}
+
+.circuit{
+  background: #fff;
+  margin-top: 10px;
+  height: 250px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.circuit img{
+  height: 190px;
+  width: auto;
+}
+
+.head{
+  background: #b7b7b7;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 50px;
+  padding-left: 10px;
+  border-bottom: 2px solid #646464;
+}
+
+.head img{
+  height: 50px;
+  width: auto;
+}
+
+/*STYLING FOR TABLETS*/
+@media only screen and (min-width: 620px){
+  .topbar{
+    height: 18px;
+  }
+
+  /*index page*/
+  .main-section figure{
+    display: none;
+  }
+
+  .fly-in-title{
+    display: none;
+  }
+
+  .main-section{
+    display: none;
+  }
+
+  .banner{
+    height: 350px;
+  }
+
+  /*resize and reposition title for tablet view*/
+  #title-tablet{
+    display: block;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  #title-tablet h1{
+    color: #fff;
+    margin-top: 100px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  /*middle section with 2 columns*/
+  .two-col{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    z-index: 1;
+  }
+  /*opacity applies to the container and all content so have to use pseudo before*/
+  .two-col:before{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-image: url("../img/background2.jpg");
+    height: 500px;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .1;
+  }
+
+  .left-content{
+    text-align: center;
+    display: inline-block;
+    height: 500px;
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  .right-content{
+    display: inline-block;
+    height: 500px;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .right-content button{
+    display: block;
+    margin: auto;
+  }
+
+  .right-content h3{
+    font-size: 1em;
+  }
+
+  /*hide this class which is styled for mobile view only*/
+  .twitter{
+    display: none;
+  }
+
+  /*styling for the gallery*/
+  #imgresults{
+    padding-bottom: 50px;
+  }
+
+  #imgresults img{
+    padding-bottom: 10px;
+    padding-right: 5px;
+  }
+
+  /*styling for guardian search results*/
+  .right-content img{
+    width: auto;
+    height: 40px;
+  }
+
+  .right-content form{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  #submit-btn{
+    padding:5px 10px;
+    background:#ccc;
+    border:0 none;
+    cursor:pointer;
+    border-radius: 5px;
+  }
+
+  #submit-btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  #searchForm label{
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-right: 10px;
+  }
+
+  #guardQuery{
+    display: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  #results{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  #results li{
+    border-bottom: 1px dashed black;
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+  }
+
+  #results li:hover{
+    cursor: pointer;
+  }
+
+  #results a{
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    font-size: 0.9em;
+    display: flex;
+  }
+
+  #results img{
+    height: 90px;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+  }
+
+  /*styling for rider page*/
+  .rider-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 600px;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+  .rider-container::before{
+    height: 600px;
+    width: 70%;
+  }
+
+  /*styling for the team page*/
+  /*styling for the open button*/
+  .openbtn{
+      padding: 10px;
+      width: 150px;
+  }
+
+  /*styling for the calandar page*/
+  .dateholder{
+    padding-left: 0px;
+    height: 200px;
+    width: 45%;
+    overflow: hidden;
+  }
+
+  .dateholder img{
+    height: 120px;
+  }
+
+  /*make the video responsive for tablet view*/
+  .vid{
+    height: auto;
+    border-bottom: 0;
+  }
+
+  .vid video{
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .footer{
+    height: 300px;
+  }
+
+  .socialmedia{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .footnav{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: auto;
+  }
+
+  /*styling for the riders page*/
+  .team{
+    height: 350px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /*styling for gallery*/
+  .slides{
+    height: 300px;
+  }
+
+  /*styling for circuits page*/
+  .circuit h2{
+    height: 70px;
+  }
+
+  .circuit{
+    height: 320px;
+    width: 90%;
+  }
+
+  .circuit img{
+    height: 250px;
+    width: auto;
+  }
+
+  .head{
+    height: 70px;
+  }
+
+  .head img{
+    height: 70px;
+  }
+
+/*STYLING FOR DESKTOPS & LAPTOPS*/
+@media only screen and (min-width: 1024px){
+  header{
+    height: 140px;
+  }
+
+  .topbar{
+    height: 20px;
+  }
+
+  #motogpimg{
+    height: 50px;
+    padding-left: 30px;
+    padding-top: 20px;
+  }
+
+  /*styling for the navigation bar*/
+  nav{
+    display: inline-block;
+    padding-top: 20px;
+  }
+
+  nav ul a{
+    color: black;
+  }
+
+  .social-nav{
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    padding-top: 0;
+    padding-left: 30px;
+  }
+
+  .social-nav img{
+    height: 16px;
+  }
+
+  .social-nav li{
+    padding-right: 10px;
+  }
+
+  #instagram:hover{
+    content: url("../img/instagram2.svg");
+    height: 16px;
+    width: auto;
+  }
+
+  #twitter:hover{
+    content: url("../img/twitter2.svg");
+    height: 16px;
+    width: auto;
+  }
+
+  #facebook:hover{
+    content: url("../img/facebook2.svg");
+    height: 16px;
+    width: auto;
+  }
+
+  #youtube:hover{
+    content: url("../img/youtube2.svg");
+    height: 16px;
+    width: auto;
+  }
+
+  .page-nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+    border-bottom: 0px;
+    padding-right: 20px;
+  }
+
+  .page-nav li{
+    border-top: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+    align-items: center;
+    height: auto;
+    color: black;
+    font-size: 1.5em;
+  }
+
+  .active{
+    font-weight: normal;
+    color: #ac0e35;
+    text-decoration: underline;
+  }
+
+  #nav-menu{
+    background: none;
+    border-bottom: 0px;
+    height: 100px;
+    width: auto;
+    font-weight: 100;
+    position: inherit;
+    opacity: 1;
+    color: black;
+  }
+
+  #menu{
+    display: none;
+  }
+
+  #nav-menu h3{
+    display: none;
+  }
+
+  /*hide the close button*/
+  #close{
+    display: none;
+  }
+
+  nav ul li{
+    display: inline-block;
+  }
+
+  /*styling for banner on index page*/
+  .banner{
+    border-top: 0px;
+    height: 500px;
+    background-attachment: fixed;
+  }
+
+  .banner2{
+    display: block;
+    height: 400px;
+    width: auto;
+    background-image: url("../img/banner2.jpg");
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  main h1{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  /*styling for the footer*/
+
+  footer{
+    height: 350px;
+  }
+
+  .footnav ul li{
+    display: block;
+  }
+
+  .footnav ul li a{
+    color: #fff;
+  }
+
+  .socialmedia{
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  /*do not display the video on desktop view*/
+  .vid{
+    display: none;
+  }
+
+  /*styling for team page*/
+  .team-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+  }
+
+  .team{
+    height: 430px;
+    width: 50%;
+    margin: auto;
+  }
+
+  /*styling for rider page*/
+  .rider-container{
+    flex-direction: column;
+    height: 800px;
+    width: 60%;
+    margin: auto;
+  }
+
+  .rider-container::before{
+    height: 800px;
+    width: 60%;
+  }
+
+  /*take away the flip effect for desktop view and display the info next to the img*/
+  .front, .back {
+  	backface-visibility: visible;
+  }
+
+  .flip-container:hover .flipper, .flip-container.hover .flipper {
+  	transform: rotateY(0deg);
+  }
+
+  /*info before displayed behind img so added margin to make it visible*/
+  .back{
+    transform: rotateY(0deg);
+    margin-left: 110%;
+  }
+
+  /*styling for gallery*/
+  .slides{
+    border: 10px solid #fff;
+    height: 500px;
+  }
+
+  .gallery-container{
+    padding-bottom: 50px;
+  }
+
+  /*styling for the calandar page*/
+  .dateholder{
+    padding-left: 0px;
+    height: 220px;
+    width: 45%;
+    overflow: hidden;
+    padding-bottom: 40px;
+  }
+
+  .dateholder img{
+    height: 190px;
+  }
+
+  .dateholder h2{
+    padding-left: 10px;
+  }
+
+
+  /*styling for the modal on team page*/
+  .modal{
+    padding-top: 120px;
+  }
+
+  .modal-content{
+    width: 30%;
+  }
+
+  /*all of the teams*/
+  #ducati{
+    background-position: top;
+  }
+
+  #yamaha{
+    background-position: top;
+  }
+
+  #honda{
+    background-position: top;
+  }
+
+  #suzuki{
+    background-position: top;
+  }
+
+  /*styling for circuits page*/
+  .circuitcontainer{
+    justify-content: space-around;
+  }
+
+  .circuit h2{
+    height: 70px;
+  }
+
+  .circuit{
+    height: 350px;
+    width: 40%;
+  }
+
+  .circuit img{
+    height: 280px;
+    width: auto;
+  }
+
+  .head{
+    height: 70px;
+  }
+
+  .head img{
+    height: 70px;
+  }
+}
